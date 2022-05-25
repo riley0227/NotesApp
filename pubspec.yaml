@@ -38,11 +38,6 @@ dependencies:
   firebase_auth: ^3.3.13
   cloud_firestore: ^3.1.11
   firebase_analytics: ^9.1.4
-  sqflite: ^2.0.2+1
-  path_provider: ^2.0.10
-  path: ^1.8.1
-  #this will allow us to pick pictures from our camera roll
-  image_picker: ^0.8.5+3
 
 dev_dependencies:
   flutter_test:
