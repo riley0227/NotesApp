@@ -1,5 +1,8 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:sparrow/constants/routes.dart';
+import 'package:sparrow/views/profilePage.dart';
 import 'package:sparrow/enums/menu_action.dart';
 import 'package:sparrow/services/auth/auth_service.dart';
 
@@ -41,11 +44,18 @@ class _NotesViewState extends State<NotesView> {
             },
           ),
         ],
+        leading: IconButton(
+            icon: const Icon(Icons.account_circle),
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const ProfilePage()));
+            }),
       ),
       body: const Text('Hello world'),
     );
   }
 }
+
 
 Future<bool> showLogOutDialog(BuildContext context) {
   return showDialog(
