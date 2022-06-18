@@ -120,6 +120,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
               isLoading: false,
             ),
           );
+
           emit(const AuthStateNeedsVerification(isLoading: false));
         } else {
           emit(
